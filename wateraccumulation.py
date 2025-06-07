@@ -4,7 +4,8 @@ import streamlit as st
 from datetime import datetime, timedelta
 
 #load the csv file for water accumulation  shihab-step 1
-df = pd.read_csv(r'h:\courstream\datasensors.csv')
+# df = pd.read_csv(r'h:\courstream\datasensors.csv')
+df = pd.read_csv('datasensors.csv') #for upload file to GitHub to streamlit cloud
 #Convert 'times' to datetime timestamp     shihab-step 2
 df['time'] = pd.to_datetime(df['time'], dayfirst=True)
 
