@@ -158,9 +158,10 @@ events_df.to_csv("water_accumulation_events2.csv", index=False)
 ################### visualizatoin #############################
 #crate visualization with pandas and visualization shihab step-7
 # Read file origianl and events
-original_df = pd.read_csv(r'h:\courstream\datasensors.csv')
-events_df = pd.read_csv(r'h:\courstream\water_accumulation_events2.csv')
-
+# original_df = pd.read_csv(r'h:\courstream\datasensors.csv')
+original_df = pd.read_csv('datasensors.csv') #for push into GitHup for cloud streamlit
+# events_df = pd.read_csv(r'h:\courstream\water_accumulation_events2.csv')
+events_df = pd.read_csv('water_accumulation_events2.csv') #for push into GitHup for cloud streamlit
 #display 2 tab
 tab1, tab2, tab3 = st.tabs(["Original Data", "Water Accumulation Events","Map Data"])
 with tab1:
